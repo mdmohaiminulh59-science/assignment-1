@@ -110,6 +110,15 @@ body {
   border-radius: 12px;
 }
 
+/* subtle overlay layer for hero background images */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(2,6,23,0.25), rgba(2,6,23,0.55));
+  pointer-events: none;
+  border-radius: 12px;
+}
+
 .hero-content {
   max-width: 760px;
 }
