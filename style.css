@@ -342,3 +342,14 @@
   background: linear-gradient(180deg, rgba(6,182,212,0.02), transparent);
   padding: 1.25rem 0 2.25rem;
 }
+
+/* Make all visible text white, except the AI placeholder box which keeps its accent color */
+body, body * {
+  color: #ffffff !important;
+}
+
+.ai-box, .ai-placeholder .ai-box {
+  color: #7c3aed !important;
+  background: rgba(139,92,246,0.06) !important;
+  border-color: #8b5cf6 !important;
+}
