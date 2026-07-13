@@ -17,6 +17,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(180deg, var(--bg), #021022);
+  font-size: 16px;
   color: var(--text);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -84,6 +85,13 @@ body {
   text-decoration: none;
   font-weight: 700;
   transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.12s ease;
+}
+
+/* slightly larger primary large button used in hero */
+.btn-large {
+  padding: 1rem 1.6rem;
+  font-size: 1.05rem;
+  border-radius: 999px;
 }
 
 .btn:hover {
