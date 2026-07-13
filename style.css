@@ -277,6 +277,16 @@ body {
   height: auto;
 }
 
+.footer-logo {
+  filter: drop-shadow(0 6px 18px rgba(6,182,212,0.08));
+  transition: transform 0.22s ease, filter 0.22s ease;
+}
+
+.footer-logo:hover {
+  transform: translateY(-6px) scale(1.02);
+  filter: drop-shadow(0 14px 30px rgba(6,182,212,0.14));
+}
+
 .footer-logo-large {
   max-width: 150px;
   height: auto;
@@ -293,4 +303,6 @@ body {
   border-top: 1px solid rgba(255,255,255,0.03);
   color: var(--muted);
   font-size: 0.9rem;
+  background: linear-gradient(180deg, rgba(6,182,212,0.02), transparent);
+  padding: 1.25rem 0 2.25rem;
 }
