@@ -4,7 +4,7 @@
   :root {
     --bg: #ffffff;
     --container: #ffffff;
-    --text: #071428;
+    --text: #ffffff; /* primary site text set to white */
     --muted: #6b7280;
     --accent: #2563eb; /* blue */
     --accent-2: #0ea5a4;
