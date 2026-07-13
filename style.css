@@ -11,7 +11,7 @@
   :root {
     --bg: #ffffff;
     --surface: #ffffff;
-    --text: #0b1220;
+    --text: #0b3d91; /* primary site text is blue */
     --muted: #5b6a78;
     --accent: #0ea5a4; /* teal */
     --accent-2: #d97706; /* warm amber */
