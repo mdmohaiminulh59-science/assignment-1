@@ -151,8 +151,23 @@ body {
 }
 
 .section-title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   font-size: 2rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(6,182,212,0.9), rgba(125,211,252,0.6));
+  border-radius: 4px;
+  bottom: -6px;
+  opacity: 0.95;
 }
 
 .section-subtitle {
