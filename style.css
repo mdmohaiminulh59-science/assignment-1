@@ -8,6 +8,15 @@
   --radius: 16px;
 }
 
+  :root {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --text: #0b1220;
+    --muted: #5b6a78;
+    --accent: #0ea5a4; /* teal */
+    --accent-2: #d97706; /* warm amber */
+    --radius: 16px;
+  }
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,6 +25,13 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
   background: linear-gradient(180deg, var(--bg), #021022);
   font-size: 16px;
   color: var(--text);
@@ -24,22 +40,47 @@ body {
 }
 
 .container {
+  .navbar {
+    background: rgba(255,255,255,0.95);
+    padding: 0.85rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(6px) saturate(110%);
+    border-bottom: 1px solid rgba(10,18,28,0.06);
+  }
   width: min(1120px, 92%);
   margin: 0 auto;
 }
 
 .navbar {
   background: linear-gradient(90deg, rgba(7,16,41,0.6), rgba(7,16,41,0.25));
+  .nav-links a,
+  .logo {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.18s ease, transform 0.18s ease;
+  }
   padding: 0.85rem 0;
   position: sticky;
   top: 0;
   z-index: 30;
   backdrop-filter: blur(8px) saturate(120%);
+  .logo-img {
+    max-height: 48px;
+    width: auto;
+    border-radius: 6px;
+  }
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
+  .btn-primary {
+    background: linear-gradient(90deg, var(--accent), #7dd3fc);
+    color: #021022;
+    padding: 0.8rem 1.4rem;
+  }
   align-items: center;
   gap: 1rem;
 }
